@@ -1,0 +1,40 @@
+… (same head and login/register sections) …
+
+<div id="dashboard" class="hidden">
+  <div class="dashboard-header">
+    <h2>Class: <span id="userClass"></span></h2>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <ul id="subjectList"></ul>
+
+  <section id="quizSection">
+    <h3>Quiz Game</h3>
+    <div id="quiz-container"></div>
+    <div class="score">Your Score: <span id="quizScore">0</span></div>
+    <div class="add-question">
+      … (same quiz add UI) …
+    </div>
+  </section>
+
+  <section id="uploadSection">
+    <h3>Homework Upload View & Download</h3>
+    <input id="hwUpload" type="file" accept="application/pdf">
+    <button onclick="uploadHomework()">Upload PDF</button>
+    <ul id="uploadedList"></ul>
+    <div id="notifyPanel" class="notify hidden"></div>
+  </section>
+
+  <section id="adminSection">
+    <h3>🛠️ Admin Controls</h3>
+    <button onclick="deleteAllQuestions()">Delete All Questions</button>
+    <button onclick="clearUploads()">Delete All Uploads</button>
+  </section>
+
+  <section id="statsSection">
+    <h3>📊 Dashboard Stats</h3>
+    <div>Total Students: <span id="statsUsers">0</span></div>
+    <div>Total Quiz Qs: <span id="statsQs">0</span></div>
+    <div>Total Uploads: <span id="statsUploads">0</span></div>
+  </section>
+</div>
