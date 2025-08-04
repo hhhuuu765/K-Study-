@@ -1,0 +1,5 @@
+… (existing styles) …
+#adminSection, #statsSection { margin-top: 20px; padding-top: 10px; border-top: 1px solid #ccc; }
+#adminSection button { display: block; margin: 10px 0; background: #e74c3c; }
+#adminSection button:hover { background: #c0392b; }
+#statsSection div { margin: 5px 0; font-size: 1em; }
